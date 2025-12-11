@@ -1,0 +1,32 @@
+{
+  "name": "weather-x402-server",
+  "version": "1.0.0",
+  "description": "Weather API server with x402 USDC payment settlement",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "tunnel": "cloudflared tunnel run weather-api"
+  },
+  "keywords": [
+    "weather",
+    "x402",
+    "usdc",
+    "payment",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@coinbase/x402": "^0.0.17",
+    "@solana/web3.js": "^1.98.0",
+    "axios": "^1.7.9",
+    "bs58": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0"
+  }
+}
